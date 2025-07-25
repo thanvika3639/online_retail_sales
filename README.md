@@ -44,20 +44,6 @@ Created using [dbdiagram.io](https://dbdiagram.io).
 
 ---
 
-## 📂 Folder Structure
-
-project/
-├── schema/
-│ └── retail_schema.sql # DDL: Table creation scripts
-├── data/
-│ └── sample_data.sql # Sample INSERTs for each table
-├── queries/
-│ ├── sales_reports.sql # Useful SELECT and JOIN queries
-│ └── views.sql # SQL Views for reporting
-├── assets/
-│ └── er-diagram.png # ER diagram image (optional)
-└── README.md
-
 
 ## 📜 Sample DDL (MySQL)
 
@@ -101,18 +87,6 @@ SELECT
   SUM(total_amount) AS revenue
 FROM orders
 GROUP BY DATE(order_date);
-✅ Deliverables
-Item	Description
-retail_schema.sql	SQL script for schema
-sample_data.sql	Sample INSERTs for testing
-queries/ folder	SELECT, JOIN, and View queries
-er-diagram.png	ER diagram (from dbdiagram.io)
 
-📎 How to Run
-Import the schema using MySQL Workbench or mysql -u root -p < retail_schema.sql
 
-Populate the tables using sample_data.sql
 
-Run queries from queries/ to generate sales reports
-
-Optionally, view the ER diagram in MySQL Workbench > Reverse Engineer
